@@ -193,3 +193,38 @@ firstGameContainer.appendChild(topGame);
 const runnerUpGame = document.createElement('h2');
 runnerUpGame.textContent = secondGame.name;
 secondGameContainer.appendChild(runnerUpGame);
+
+
+function searchGame() {
+    var input = document.getElementById('game-search');
+    var filter = input.value.toUpperCase();
+    var gamesContainer = document.getElementById('games-container');
+
+    // Clear current games display
+    gamesContainer.innerHTML = '';
+
+    // Filter games from GAMES_JSON based on the search input
+    var filteredGames = GAMES_JSON.filter(function(game) {
+        return game.name.toUpperCase().indexOf(filter) > -1;
+    });
+
+    // Re-add the filtered games to the page
+    addGamesToPage(filteredGames);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('game-search');
+
+    searchInput.addEventListener('input', () => {
+        const filter = searchInput.value.toUpperCase();
+        // Clear current games display
+        gamesContainer.innerHTML = '';
+
+        // Filter games from GAMES_JSON based on the search input
+        const filteredGames = GAMES_JSON.filter(game =>
+            game.name.toUpperCase().includes(filter)
+        );
+        
+        addGamesToPage(filteredGames);
+    });
+});

@@ -11,12 +11,45 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-between; /* Spaces out items */
+    align-items: center;
     background-color: lightblue;
     padding: 1%;
-    align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+}
+
+.header #tentacles {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-left: 20px; /* Adjust as needed */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+
+/* Style for navbar link */
+.header a {
+    color: black; /* Or any color that fits your design */
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 17px;
+}
+
+.header a:hover {
+    color: darkblue; /* Or any other hover effect color */
+    text-decoration: underline;
 }
 
 .stats-container {
@@ -69,7 +102,10 @@ body {
 }
 
 #button-container {
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 10px
 }
 
 button {

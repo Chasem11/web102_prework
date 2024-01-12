@@ -10,7 +10,10 @@
     <!-- header row with logo -->
     <div class="header">
         <img id="tentacles" src="assets/tentacles.png">
-        <h1 class="header-text">Sea Monster Crowdfunding</h1>
+        <h1 class="header-text" style="flex-grow: 2;">Sea Monster Crowdfunding</h1>
+
+        <!-- Navbar link -->
+        <a href="#our-games-section" style="flex-grow: 1;">Our Games</a>
     </div>
 
     <!-- background info about company -->
@@ -48,13 +51,19 @@
     </div>
 
     <!-- list of games funded by Sea Monster -->
-    <h2>Our Games</h2>
+    <h2 id="our-games-section">Our Games</h2>
     <p>Check out each of our games below!</p>
     <div id="button-container">
+        
+        <div class="search-container">
+            <input type="text" id="game-search" placeholder="Search for a game...">
+        </div>
+
         <button id="unfunded-btn">Show Unfunded Only</button>
         <button id="funded-btn">Show Funded Only</button>
         <button id="all-btn">Show All Games</button>
     </div>
+
     <div id="games-container">
 
     </div>
