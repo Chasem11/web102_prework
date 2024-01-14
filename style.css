@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background-color: #edf7F6;
 }
 
 
@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: flex-start; 
     align-items: center;
-    background-color: lightblue;
+    background-color: #9df9ef;
     padding: 1%;
     margin-left: -10px;
     margin-right: -10px;
@@ -18,7 +18,7 @@ body {
 }
 
 .spacer {
-    flex-grow: 1; /* Causes the spacer to take up available space */
+    flex-grow: 1;
 }
 
 .header #tentacles {
@@ -28,7 +28,15 @@ body {
 
 
 .header a {
-    margin-right: 20px; /* Adjust the margin as needed */
+    margin-right: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 24px;
 }
 
 .search-container {
@@ -41,19 +49,18 @@ body {
     margin-top: 8px;
     font-size: 17px;
     border: none;
+    width: 120%;
 }
 
-
-/* Style for navbar link */
 .header a {
-    color: black; /* Or any color that fits your design */
+    color: black; 
     text-decoration: none;
     padding: 8px 15px;
     font-size: 17px;
 }
 
 .header a:hover {
-    color: darkblue; /* Or any other hover effect color */
+    color: darkblue;
     text-decoration: underline;
 }
 
@@ -64,11 +71,11 @@ body {
 
 .stats-container:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 30px #9df9ef;
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: #ceebe8;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -103,7 +110,7 @@ body {
 
 .game-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 30px #9df9ef;
 }
 
 #button-container {
