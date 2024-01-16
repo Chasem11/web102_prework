@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: flex-start; 
     align-items: center;
-    background-color: #9df9ef;
+    background-color: #bef2ff;
     padding: 1%;
     margin-left: -10px;
     margin-right: -10px;
@@ -60,7 +60,7 @@ h2 {
 }
 
 .header a:hover {
-    color: darkblue;
+    color: #4f7097;
     text-decoration: underline;
 }
 
@@ -75,7 +75,7 @@ h2 {
 }
 
 .stats-card {
-    background-color: #ceebe8;
+    background-color: #93a7d1;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -126,4 +126,10 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    background-color: #1bf5af;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px #9df9ef;
 }

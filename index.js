@@ -194,7 +194,7 @@ const runnerUpGame = document.createElement('h2');
 runnerUpGame.textContent = secondGame.name;
 secondGameContainer.appendChild(runnerUpGame);
 
-
+// Event listener for search bar
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('game-search');
 
